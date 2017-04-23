@@ -71,3 +71,4 @@ deploy:
   type: git
   repo: https://github.com/citizenofearth/citizenofearth.github.io.git
   branch: master
+  message: hexo deployment
