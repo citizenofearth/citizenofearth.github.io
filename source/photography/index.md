@@ -11,8 +11,6 @@ date: 2017-04-10 5:53:24
 
 ![alt text](../images/photography/03.jpg "cuba : lonely 5am swim")
 
-![alt text](../images/photography/04.jpg "cuba : perfect shade")
-
 ![alt text](../images/photography/05.jpg "cuba : home")
 
 ![alt text](../images/photography/06.jpg "cuba : friend on the beach")
@@ -28,6 +26,8 @@ date: 2017-04-10 5:53:24
 ![alt text](../images/photography/11.jpg "cuba : horse in the shade 2")
 
 ![alt text](../images/photography/12.jpg "cuba : park in matanzas")
+
+![alt text](../images/photography/04.jpg "cuba : perfect shade")
 
 ![alt text](../images/photography/13.jpg "montreal : barbed wire")
 
