@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of mo">
+    <meta name="description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js is a JavaScript library for ma">
 <meta name="keywords" content="d3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="D3.js">
 <meta property="og:url" content="http://blog.tenzin.com/2017/04/23/d3/index.html">
 <meta property="og:site_name" content="tenzin namgyal">
-<meta property="og:description" content="D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of mo">
-<meta property="og:updated_time" content="2017-04-24T02:28:09.456Z">
+<meta property="og:description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js is a JavaScript library for ma">
+<meta property="og:updated_time" content="2017-04-24T03:59:31.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3.js">
-<meta name="twitter:description" content="D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of mo">
+<meta name="twitter:description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js is a JavaScript library for ma">
     
     
         
@@ -137,17 +137,119 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h4 id="D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”"><a href="#D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”" class="headerlink" title="D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”"></a><a href="https://d3js.org" target="_blank" rel="external">D3.js</a> is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”</h4><script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+div.bar {
+    display: inline-block;
+    width: 7px;
+    height: 75px;   /* We'll override this later */
+    background-color: #7404a4;
+    margin-right: 1px;
+}
+</style>
+
+<h4 id="D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”"><a href="#D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”" class="headerlink" title="D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”"></a><a href="https://d3js.org" target="_blank" rel="external">D3.js</a> is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”</h4><hr>
+<svg width="500" height="50"><br/>    <rect x="0" y="0" width="500" height="50"/><br/></svg>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script type="text/javascript">
-    var dataset = [5, 10, 15, 20, 25];
+    var dataset = [];
+    for (var i = 0; i < 78; i++) {
+        var newNumber = Math.round(Math.random() * 30);
+        dataset.push(newNumber);
+    }
 
     d3.select(".content")
-        .selectAll("p")
-        .data(dataset)
+        .selectAll("div")
+        .data(dataset)  // <-- The answer is here!
         .enter()
-        .append("p")
-        .text(function(d) { return d; });
+        .append("div")
+        .attr("class", "bar")
+        .style("height", function(d) {
+            var barHeight = d * 5;
+            return barHeight + "px";
+        });
+</script>
+
+<hr>
+<style>
+
+<p>button {<br>  position: absolute;<br>  left: 10px;<br>  top: 10px;<br>}</p>
+<p></style><p></p>
+<p><button onclick="transition()">Update</button></p>
+<p><svg width="960" height="500"/></p>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var n = 20, // number of layers
+    m = 200, // number of samples per layer
+    k = 10; // number of bumps per layer
+
+var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
+    layers0 = stack(d3.transpose(d3.range(n).map(function() { return bumps(m, k); }))),
+    layers1 = stack(d3.transpose(d3.range(n).map(function() { return bumps(m, k); }))),
+    layers = layers0.concat(layers1);
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var x = d3.scaleLinear()
+    .domain([0, m - 1])
+    .range([0, width]);
+
+var y = d3.scaleLinear()
+    .domain([d3.min(layers, stackMin), d3.max(layers, stackMax)])
+    .range([height, 0]);
+
+var z = d3.interpolateCool;
+
+var area = d3.area()
+    .x(function(d, i) { return x(i); })
+    .y0(function(d) { return y(d[0]); })
+    .y1(function(d) { return y(d[1]); });
+
+svg.selectAll("path")
+  .data(layers0)
+  .enter().append("path")
+    .attr("d", area)
+    .attr("fill", function() { return z(Math.random()); });
+
+function stackMax(layer) {
+  return d3.max(layer, function(d) { return d[1]; });
+}
+
+function stackMin(layer) {
+  return d3.min(layer, function(d) { return d[0]; });
+}
+
+function transition() {
+  var t;
+  d3.selectAll("path")
+    .data((t = layers1, layers1 = layers0, layers0 = t))
+    .transition()
+      .duration(2500)
+      .attr("d", area);
+}
+
+// Inspired by Lee Byron’s test data generator.
+function bumps(n, m) {
+  var a = [], i;
+  for (i = 0; i < n; ++i) a[i] = 0;
+  for (i = 0; i < m; ++i) bump(a, n);
+  return a;
+}
+
+function bump(a, n) {
+  var x = 1 / (0.1 + Math.random()),
+      y = 2 * Math.random() - 0.5,
+      z = 10 / (0.1 + Math.random());
+  for (var i = 0; i < n; i++) {
+    var w = (i / n - y) * z;
+    a[i] += x * Math.exp(-w * w);
+  }
+}
+
 </script>
   </div>
 </article>
