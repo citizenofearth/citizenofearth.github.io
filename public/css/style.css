@@ -1074,7 +1074,7 @@ article .content .video-container embed {
 }
 article .content blockquote {
   background: inherit;
-  color: #ccffb6;
+  color: #7404a4;
   border-left: 0px solid #ccc;
   margin: 1rem 10px;
   padding: 0.5em 10px;
@@ -1084,7 +1084,7 @@ article .content blockquote p {
   margin: 0;
 }
 article .content blockquote:before {
-  color: #ccffb6;
+  color: #7404a4;
   content: "\201C";
   font-size: 2em;
   line-height: 0.1em;
