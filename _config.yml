@@ -69,6 +69,6 @@ theme: cactus-dark
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/citizenofearth/citizenofearth.github.io.git
+  repo: git@github.com:citizenofearth/citizenofearth.github.io.git
   branch: master
   message: hexo deployment
