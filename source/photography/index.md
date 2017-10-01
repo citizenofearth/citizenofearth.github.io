@@ -11,11 +11,9 @@ date: 2017-04-10 5:53:24
 
 ![alt text](../images/photography/03.jpg "cuba : lonely 5am swim")
 
-![alt text](../images/photography/05.jpg "cuba : home")
-
-![alt text](../images/photography/06.jpg "cuba : friend on the beach")
-
 ![alt text](../images/photography/07.jpg "cuba : palm tree bark")
+
+![alt text](../images/photography/05.jpg "cuba : home")
 
 ![alt text](../images/photography/08.jpg "cuba : impending storms")
 
@@ -26,6 +24,8 @@ date: 2017-04-10 5:53:24
 ![alt text](../images/photography/11.jpg "cuba : horse in the shade 2")
 
 ![alt text](../images/photography/12.jpg "cuba : park in matanzas")
+
+![alt text](../images/photography/06.jpg "cuba : friend on the beach")
 
 ![alt text](../images/photography/04.jpg "cuba : perfect shade")
 
@@ -73,9 +73,7 @@ date: 2017-04-10 5:53:24
 
 ![alt text](../images/photography/34.jpg "new york : halloween")
 
-![alt text](../images/photography/35.jpg "new york : halloween 2")
-
-![alt text](../images/photography/36.jpg "new york : halloween 3")
+![alt text](../images/photography/36.jpg "new york : halloween 2")
 
 ![alt text](../images/photography/37.jpg "break")
 
