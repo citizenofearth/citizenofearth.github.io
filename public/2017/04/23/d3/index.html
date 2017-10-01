@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js is a JavaScript library for ma">
+    <meta name="description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js (or just D3 for Data-Driven Do">
 <meta name="keywords" content="d3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="D3.js">
 <meta property="og:url" content="http://blog.tenzin.com/2017/04/23/d3/index.html">
 <meta property="og:site_name" content="tenzin namgyal">
-<meta property="og:description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js is a JavaScript library for ma">
-<meta property="og:updated_time" content="2017-04-24T03:59:31.661Z">
+<meta property="og:description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js (or just D3 for Data-Driven Do">
+<meta property="og:updated_time" content="2017-10-01T20:53:16.986Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3.js">
-<meta name="twitter:description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js is a JavaScript library for ma">
+<meta name="twitter:description" content="div.bar {     display: inline-block;     width: 7px;     height: 75px;   /* We&apos;ll override this later */     background-color: #7404a4;     margin-right: 1px; }   D3.js (or just D3 for Data-Driven Do">
     
     
         
@@ -73,6 +73,8 @@
         <li><a class="icon" href="/2017/04/19/hello-world/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
         
         
+        <li><a class="icon" href="/2017/10/01/learning-react/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
       </ul>
@@ -98,7 +100,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”"><span class="toc-number">1.</span> <span class="toc-text">D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#D3-js-or-just-D3-for-Data-Driven-Documents-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation"><span class="toc-number">1.</span> <span class="toc-text">D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -147,7 +149,7 @@ div.bar {
 }
 </style>
 
-<h4 id="D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”"><a href="#D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”" class="headerlink" title="D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”"></a><a href="https://d3js.org" target="_blank" rel="external">D3.js</a> is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”</h4><hr>
+<h2 id="D3-js-or-just-D3-for-Data-Driven-Documents-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation"><a href="#D3-js-or-just-D3-for-Data-Driven-Documents-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation" class="headerlink" title="D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation."></a><a href="https://d3js.org" target="_blank" rel="external">D3.js</a> (or just D3 for Data-Driven Documents) is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.</h2><hr>
 <svg width="500" height="50"><br/>    <rect x="0" y="0" width="500" height="50"/><br/></svg>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -172,11 +174,7 @@ div.bar {
 </script>
 
 <hr>
-<style>
-
-<p>button {<br>  position: absolute;<br>  left: 10px;<br>  top: 10px;<br>}</p>
-<p></style><p></p>
-<p><button onclick="transition()">Update</button></p>
+<p><button class="button" onclick="transition()">Update</button></p>
 <p><svg width="960" height="500"/></p>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
@@ -278,7 +276,7 @@ function bump(a, n) {
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#D3-js-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation-”"><span class="toc-number">1.</span> <span class="toc-text">D3.js is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.”</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#D3-js-or-just-D3-for-Data-Driven-Documents-is-a-JavaScript-library-for-manipulating-documents-based-on-data-D3-helps-you-bring-data-to-life-using-HTML-SVG-and-CSS-D3’s-emphasis-on-web-standards-gives-you-the-full-capabilities-of-modern-browsers-without-tying-yourself-to-a-proprietary-framework-combining-powerful-visualization-components-and-a-data-driven-approach-to-DOM-manipulation"><span class="toc-number">1.</span> <span class="toc-text">D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for manipulating documents based on data.  D3 helps you bring data to life using HTML, SVG, and CSS.  D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
@@ -339,8 +337,7 @@ function bump(a, n) {
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
 <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
-
-
+<link rel="stylesheet" href="/css/custom.css">
 <!-- jquery -->
 <script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>

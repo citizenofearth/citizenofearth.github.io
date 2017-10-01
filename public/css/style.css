@@ -495,7 +495,7 @@ body {
 .content h5 a,
 .content h6 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
   background: none;
 }
 .content h1 a:hover,
